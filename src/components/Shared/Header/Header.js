@@ -31,9 +31,6 @@ const Header = () => {
                   <Nav.Link as={NavLink} to="/add">
                     Add Event
                   </Nav.Link>
-                  <Nav.Link as={NavLink} to="/manage">
-                    Manage Event
-                  </Nav.Link>
                 </>
               )}
               {user ? (
@@ -43,6 +40,9 @@ const Header = () => {
                     id="basic-nav-dropdown"
                     className="user-logout"
                   >
+                    <Nav.Link as={NavLink} to="/manage">
+                      Manage Event
+                    </Nav.Link>
                     <button onClick={handleLogOut} className="btn-logout">
                       Logout
                     </button>

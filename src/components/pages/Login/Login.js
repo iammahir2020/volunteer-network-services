@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
@@ -8,6 +8,7 @@ import PageTitle from "../../Shared/PageTitle/PageTitle";
 
 const Login = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [signInWithGoogle, googleUser, googleLoading, googleError] =
     useSignInWithGoogle(auth);
 
@@ -15,8 +16,9 @@ const Login = () => {
     signInWithGoogle();
   };
 
+  const from = location.state?.from?.pathname || "/";
   if (googleUser) {
-    navigate("/");
+    navigate(from, { replace: true });
   }
 
   if (googleLoading) {

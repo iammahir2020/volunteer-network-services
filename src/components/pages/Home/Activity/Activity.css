@@ -1,0 +1,22 @@
+.activity-card{
+    text-align: center;
+}
+.activity-card:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+}
+.activity-card img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+.activity-card h4{
+    margin: 0;
+}
+.activity-info{
+    background-color: rgb(255, 187, 61);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+}

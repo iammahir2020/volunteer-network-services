@@ -12,6 +12,9 @@
     background-color: white;
     width: 100%;
     border: none;
+    text-align: left;
+    color: navy;
+    font-weight: 500;
 }
 .user-logout{
     padding: 0 20px;
