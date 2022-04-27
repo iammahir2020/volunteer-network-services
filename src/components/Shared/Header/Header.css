@@ -1,0 +1,19 @@
+.nav-bar{
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+.header-logo{
+    width: 150px;
+}
+.nav-links{
+    align-items: center;
+}
+.btn-logout{
+    background-color: white;
+    width: 100%;
+    border: none;
+}
+.user-logout{
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+}
