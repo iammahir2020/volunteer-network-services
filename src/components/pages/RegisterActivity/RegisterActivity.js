@@ -13,7 +13,7 @@ const RegisterActivity = () => {
 
   useEffect(() => {
     const getActivity = async () => {
-      const url = `http://localhost:5000/activity/${id}`;
+      const url = `https://stark-peak-09006.herokuapp.com/activity/${id}`;
       console.log(url);
       const { data } = await axios.get(url);
       setActivity(data);
@@ -39,7 +39,7 @@ const RegisterActivity = () => {
     };
 
     const { data } = await axios.post(
-      "http://localhost:5000/register",
+      "https://stark-peak-09006.herokuapp.com/register",
       registration
     );
     if (data.acknowledged === true) {

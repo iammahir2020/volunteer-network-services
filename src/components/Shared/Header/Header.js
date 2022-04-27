@@ -41,7 +41,7 @@ const Header = () => {
                     className="user-logout"
                   >
                     <Nav.Link as={NavLink} to="/manage">
-                      Manage Event
+                      My Events
                     </Nav.Link>
                     <button onClick={handleLogOut} className="btn-logout">
                       Logout

@@ -7,7 +7,9 @@ const Activities = () => {
   const [activities, setActivities] = useState([]);
   useEffect(() => {
     const getActivities = async () => {
-      const { data } = await axios.get("http://localhost:5000/activity");
+      const { data } = await axios.get(
+        "https://stark-peak-09006.herokuapp.com/activity"
+      );
       setActivities(data);
     };
     getActivities();
